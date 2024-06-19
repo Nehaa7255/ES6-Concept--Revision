@@ -99,7 +99,6 @@ console.log(b) // 1
 */
 const numbers=[1,2]
 const [b,a]=numbers;
-
 //console.log(a);
 //console.log(b);
 
@@ -110,3 +109,4 @@ function add(a = 30, b = 0) {
 }
 console.log(add(2, 3))
 */
+
