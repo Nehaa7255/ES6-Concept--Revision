@@ -216,3 +216,17 @@ console.log(person) // logs { name: 'Amit', age: 25, occupation: 'Software Engin
 changeOccupation(person, 'Product Manager')
 console.log(person) // logs { name: 'Amit', age: 25, occupation: 'Product Manager' } to t
 */
+const person={
+name: "Amit",
+age:25,
+occupation:"Software Engineer",
+};
+console.log(person);
+
+const changeOccupation=(person,newOccupation)=>{
+    return (person.occupation=newOccupation);
+};
+
+console.log(changeOccupation(person, "product Manager"));
+console.log(person);
+
