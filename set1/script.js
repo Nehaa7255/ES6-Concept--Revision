@@ -146,3 +146,73 @@ const isMultipleOfThree=(num)=>{
 
 //console.log(isMultipleOfThree(9));
 //console.log(isMultipleOfThree(5));
+
+/*
+10.  Write a function which takes in a number as input and returns
+ it after multiplying by 10.
+/ Your ES6 code here
+console.log(multiplyByTen(20)) // 200
+console.log(multiplyByTen(40)) // 400
+*/
+const multiplyByTen=(num)=>{
+    return num*10;
+}
+//console.log(multiplyByTen(20));
+//console.log(multiplyByTen(40));
+
+/*
+11.  Console individual values of the product object using 
+ object destructuring.
+const product = {
+title: 'iPhone',
+price: 5999,
+description: 'The iPhone is a smartphone developed by Apple',
+}
+/ Your ES6 code here
+console.log(title) // iPhone
+console.log(price) // 5999
+console.log(description) // The iPhone is a smartphone developed
+by Apple
+*/
+
+const product = {
+title: 'iPhone',
+price: 5999,
+description: 'The iPhone is a smartphone developed by Apple',
+};
+const{title, price, description}=product;
+
+//console.log(title);
+//console.log(price);
+//console.log(description);
+
+/*
+12. Create an object book with properties title, author, and  pages.
+Create a function getBookDetails that takes a book  object as a 
+parameter and returns if the book has more than  100 pages. 
+/ Your ES6 code here
+console.log(getBookDetails(book)) // logs 'true' if the pages are above 100
+console.log(getBookDetails(book)) // logs 'false' if the pages are 100 or below
+*/
+const book= {
+title: 'three men in a boat',
+author: 'novel',
+pages:155,
+};
+const getBookDetails=(book)=>{
+if(book.pages>100)
+    return "true"
+else
+return "false" 
+}
+//console.log(getBookDetails(book));
+
+/*
+13.  Create a function changeOccupation that takes an object person and a string newOccupation as
+parameters, and changes the occupation property of the person object to the newOccupation.
+Log the person object to the console before and after calling the function.
+/ Your ES6 code here
+console.log(person) // logs { name: 'Amit', age: 25, occupation: 'Software Engineer' } to
+changeOccupation(person, 'Product Manager')
+console.log(person) // logs { name: 'Amit', age: 25, occupation: 'Product Manager' } to t
+*/
