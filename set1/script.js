@@ -119,6 +119,7 @@ return "false";
 console.log(isHelloPresent('Hello World')) // true
 console.log(isHelloPresent('World')) // false
 */
+
 const isHelloPresent=(words)=>{
     if(words.includes("hello") || words.includes("Hello"))
         return "true"
@@ -135,11 +136,13 @@ const isHelloPresent=(words)=>{
    console.log(isMultipleOfThree(5)) // false
    console.log(isMultipleOfThree(9)) // true
 */
+
 const isMultipleOfThree=(num)=>{
     if(num%3==0)
         return "true";
     else
     return "false";
 }
+
 //console.log(isMultipleOfThree(9));
 //console.log(isMultipleOfThree(5));
