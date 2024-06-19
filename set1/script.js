@@ -226,7 +226,6 @@ occupation:"Software Engineer",
 const changeOccupation=(person,newOccupation)=>{
     return (person.occupation=newOccupation);
 };
-
 //console.log(changeOccupation(person, "product Manager"));
 //console.log(person);
 
@@ -240,11 +239,27 @@ console.log(c) // logs 3 to the console
 */
 const numbers=[1,2,3]
 const [a,b,c]=numbers;
-console.log(a);
-console.log(b);
-console.log(c);
+//console.log(a);
+//console.log(b);
+//console.log(c);
 
-/*15. Convert the given function into ES6 with least amount of characters.
-const numbers = [1, 2, 3]
-
+/*
+15. Convert the given function into ES6 with least amount of characters.
+function defaultParamsFunc(a, b, c) {
+ if (c === undefined) {
+ c = 4
+ }
+ return a * b * c
+}
+console.log(defaultParamsFunc(3, 1)) // 12
+console.log(defaultParamsFunc(3, 10)) // 120
 */
+
+const defaultParamsFunc=(a,b,c)=>{
+    if (c === undefined) {
+        c = 4
+        }
+        return a * b * c
+}
+console.log(defaultParamsFunc(3,1));
+console.log(defaultParamsFunc(3,10))
