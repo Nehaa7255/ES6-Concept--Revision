@@ -221,12 +221,30 @@ name: "Amit",
 age:25,
 occupation:"Software Engineer",
 };
-console.log(person);
+//console.log(person);
 
 const changeOccupation=(person,newOccupation)=>{
     return (person.occupation=newOccupation);
 };
 
-console.log(changeOccupation(person, "product Manager"));
-console.log(person);
+//console.log(changeOccupation(person, "product Manager"));
+//console.log(person);
 
+/*
+14.  Given an array numbers containing the numbers 1, 2, and 3. 
+Use array destructuring to log each number to the console.
+/ Your ES6 code here
+console.log(a) // logs 1 to the console
+console.log(b) // logs 2 to the console
+console.log(c) // logs 3 to the console
+*/
+const numbers=[1,2,3]
+const [a,b,c]=numbers;
+console.log(a);
+console.log(b);
+console.log(c);
+
+/*15. Convert the given function into ES6 with least amount of characters.
+const numbers = [1, 2, 3]
+
+*/
