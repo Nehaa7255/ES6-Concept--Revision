@@ -42,7 +42,7 @@ const person1 = { name: 'Ajay', age: 20 }
 console.log(isEligible(person1, 1)) // false
 console.log(isEligible(person1, 2)) // true
 */
-const person1 = { name: 'Ajay', age: 20 }
+//const person1 = { name: 'Ajay', age: 20 }
 const isEligible=(person,num)=>{
     if(person.age+num>21)
         return "true";
@@ -109,4 +109,125 @@ function add(a = 30, b = 0) {
 }
 console.log(add(2, 3))
 */
+//const add=(a=30,b=0)=> a+b;
+//console.log(add(2,3));
 
+/*
+7. Write an ES6 function combine Objects with least amount of 
+characters which merges two objects into one.
+/ Your ES6 function here
+const obj1 = { a: 1, b: 2 }
+const obj2 = { c: 3, d: 4 }
+const combinedObj = combineObjects(obj1, obj2)
+console.log(combinedObj)
+/ Expected Output: {a: 1, b: 2, c: 3, d: 4}
+*/
+const obj1 = { a: 1, b: 2 }
+const obj2 = { c: 3, d: 4 }
+const combinedObj =(obj1, obj2)=>{
+return { ...obj1,...obj2};
+};
+//console.log(combinedObj(obj1,obj2))
+
+/*
+8.   Convert the function getData, into an ES6 function with last 
+  amount of characters.
+ / Hint: Destructuring
+  function getData(person) {
+ const name = person.name
+ const address = person.address.city
+ console.log(name) // John Doe
+ console.log(address) // New York
+}
+const person = {
+ name: 'John Doe',
+ address: {
+ city: 'New York',
+ state: 'NY',
+ },
+}
+getData(person)
+*/  
+const persons = {
+    name: "John Doe",
+    address: {
+      city: "New York",
+      state: "NY",
+    },
+  };
+  const getData = ({ name, address }) => {
+    console.log(name);
+    console.log(address);
+  };
+getData(persons);
+/*
+
+9. Write a function that takes a string as input and returns the string
+ in all uppercase letters.
+/ Youe ES6 code here
+console.log(stringToUpperCase('hello')) // "HELLO"
+*/
+const stringToUpperCase=str =>str.toUpperCase();
+//console.log(stringToUpperCase("hello"));
+
+/*
+10. Write a function that takes two strings as input and concatenates
+   them together.
+/ Your ES6 code here
+console.log(concatenateStrings('hello', 'world')) // "helloworld"
+*/
+const concatenateStrings=(str1,str2)=> str1+str2;
+//console.log(concatenateStrings("hello", "world"));
+
+/*
+11. Write a function that takes an array and returns the last 
+element in the array.
+console.log(lastElement([1, 2, 3, 4, 5])) // 5
+*/
+const lastElement=arr=>arr[arr.length-1];
+//console.log(lastElement([1, 2, 3, 4, 5]))
+
+/*
+12.  Write a function that takes an array and returns the first 
+element of the array.
+/ Your ES6 code here
+console.log(firstElement([1, 2, 3, 4, 5])) // 1
+*/
+const firstElement=arr=>arr[0]
+//console.log(firstElement([1, 2, 3, 4, 5]))
+
+/*
+13. Write a function that takes an array and a number and returns the
+ sum of first element and the number.
+/ Your ES6 code here
+console.log(sumFirstElement([1, 2, 3], 5)) // 6
+*/
+const sumFirstElement=(arr,num)=>arr[0]+num;
+//console.log(sumFirstElement([1, 2, 3], 5));
+
+/*
+14.  Write a function that takes an array and returns the sum of first
+ and last element.
+ Your ES6 code here
+console.log(sumFirstAndLast([1, 2, 3, 4, 8])) // 9
+*/
+const sumFirstAndLast=arr=>arr[0]+arr[arr.length-1];
+//console.log(sumFirstAndLast([1, 2, 3, 4, 8]))
+
+/*
+15.  Write a function that takes an object representing a person's 
+information (name, age,occupation) and returns a template literal that
+ includes the person's name and age in a sentence.
+ / Your ES6 code here
+const person1 = { name: 'John', age: 25, occupation: 'Software Engineer' }
+const person2 = { name: 'Jane', age: 45, occupation: 'Data Analyst' }
+console.log(personInfo(person1)) // Expected output: "John is 25 years old."
+console.log(personInfo(person2)) // Expected output: "Jane is 45 years old."
+*/
+const person1 = { name: 'John', age: 25, occupation: 'Software Engineer'}
+const person2 = { name: 'Jane', age: 45, occupation: 'Data Analyst' }
+const personInfo=(person)=>{
+    return `${person.name} is ${person.age} years old.`;
+}
+//console.log(personInfo(person1));
+//console.log(personInfo(person2));
