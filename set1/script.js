@@ -81,12 +81,65 @@ const checkForAlphabetA=(string)=>{
 //console.log(checkForAlphabetA("jane"));
 
 /*
-6.   Write a function that takes a string as input and determines if it is longer than 5 characters.
+6.   Write a function that takes a string as input and determines 
+  if it is longer than 5 characters.
 / Your ES6 code here
 console.log(checkLength('Programming')) // more than 5 characters
 console.log(checkLength('Jeep')) // less than 5 characters
 */
-const checkLength=(string)=>{
-    
+const checkLength=(string) =>{
+    if(string.length>5)
+        return "more than 5 characters";
+    else
+    return "less than 5 characters"
+}
+//console.log(checkLength("jeep"));
+//console.log(checkLength("progamming"));
 
-} 
+/*
+7.  Write a function that takes a number as input and determines 
+    if it is between 1 and 10.
+   Your ES6 Code here
+console.log(isBetweenOneAndTen(5)) // true
+console.log(isBetweenOneAndTen(11)) // false
+*/
+const isBetweenOneAndTen=(number)=>{
+if(number>=1 && number<=10)
+    return "true";
+else
+return "false";
+}
+//console.log(isBetweenOneAndTen(5));
+//console.log(isBetweenOneAndTen(11));
+
+/*
+8.  Write a function that takes a string as input and determines 
+   if it contains the word "hello".
+ / Your ES6 code here
+console.log(isHelloPresent('Hello World')) // true
+console.log(isHelloPresent('World')) // false
+*/
+const isHelloPresent=(words)=>{
+    if(words.includes("hello") || words.includes("Hello"))
+        return "true"
+    else
+    return "false"
+}
+//console.log(isHelloPresent("Hello World"));
+//console.log(isHelloPresent("World"))
+
+/*
+9.  Write a function that takes a number as input and determines 
+    if it is a multiple of 3.
+    / Your ES6 code here
+   console.log(isMultipleOfThree(5)) // false
+   console.log(isMultipleOfThree(9)) // true
+*/
+const isMultipleOfThree=(num)=>{
+    if(num%3==0)
+        return "true";
+    else
+    return "false";
+}
+//console.log(isMultipleOfThree(9));
+//console.log(isMultipleOfThree(5));
