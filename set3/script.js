@@ -161,7 +161,7 @@ const sumOfEvenIndices = (arr) => {
       return index % 2 === 0 ? sum + num : sum;
     },0);
   }; 
-console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5]))
+//console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5]))
 
 /*
 11. Write an ES6 function to return the sum of only first 2 
@@ -170,21 +170,29 @@ elements of the array .
 console.log(sumFirstTwoElements([10, 4, 3, 7, 1, 5])) // 14
 console.log(sumFirstTwoElements([12, 14, 3, 27, 15])) // 26
 */
-
+const sumFirstTwoElements=(arr)=>{
+    return arr[0]+arr[1];
+}
+//console.log(sumFirstTwoElements([10, 4, 3, 7, 1, 5]));
+//console.log(sumFirstTwoElements([12, 14, 3, 27, 15]));
 
 
 /*
-12. Write an ES6 function to return the first element which is a multiple of 5 in the given array
+12. Write an ES6 function to return the first element which is a
+   multiple of 5 in the given array
 / Your ES6 code here
 console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3])) // 10
 console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) // 5
 */
-
-
+const printMultipleOfFive=(arr,num)=>{
+          return arr.find(num=>num%5==0)
+};
+console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3])) 
+console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) 
 
 /*
-13.   Create a function which takes in the given object and returns another object only with the
-properties postalCode and city in it.
+13.   Create a function which takes in the given object and returns 
+another object only with the properties postalCode and city in it.
 / Your ES6 code here
 const userData = {
  name: 'Jane Doy',
@@ -194,8 +202,15 @@ const userData = {
 console.log(getAddress(userData))
 / {postalCode: '12134', city: 'Germany'}
 */
-
-
+const userData = {
+    name: 'Jane Doy',
+    postalCode: '12134',
+    city: 'Germany',
+   }
+const getAddress=(Data)=>{
+return `{postalCode: '${userData.postalCode}', city: '${userData.city}'}`;
+}
+console.log(getAddress(userData));
 
 
 /*
@@ -213,7 +228,7 @@ const userData2 = {
  postalCode: '560223',
  country: 'India',
 }
-console.log(printData(userData2)) // Pritam lives in India
+console.log(printData(userData2))  // Pritam lives in India
 */
 
 
