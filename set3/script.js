@@ -149,7 +149,6 @@ const sayHello=(arr)=>{
 //console.log(sayHello(['Akshay', 'Sweta', 'Prerana', 'Vinay']));
 //console.log(sayHello(['Kanika', 'Rakesh', 'Prerana', 'Puja'])); 
 
-
 /*
 10.  Write an ES6 function to return sum of all numbers at even 
 indices of the given array.
@@ -161,11 +160,8 @@ const sumOfEvenIndices = (arr) => {
     return arr.reduce((sum, num, index) => {
       return index % 2 === 0 ? sum + num : sum;
     },0);
-  };
-  
-  
+  }; 
 console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5]))
-
 
 /*
 11. Write an ES6 function to return the sum of only first 2 
