@@ -172,6 +172,7 @@ console.log(sumFirstTwoElements([12, 14, 3, 27, 15])) // 26
 */
 
 
+
 /*
 12. Write an ES6 function to return the first element which is a multiple of 5 in the given array
 / Your ES6 code here
