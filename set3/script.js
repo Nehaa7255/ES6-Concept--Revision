@@ -14,7 +14,7 @@ const formatArray= (arr)=>{
 }
 const items = ['apple', 'banana', 'orange']
 const message = formatArray(items);
-console.log(message);
+//console.log(message);
 
 /*
 2. Create a function that takes a product object as an argument and
@@ -39,7 +39,7 @@ const product = {
     return `${product.name} costs INR ${product.price} and is ${product.inStock ? "in stock." : "out of stock."}`;
    };
    const message1 = formatProduct(product)
-   console.log(message1);
+   //console.log(message1);
 
 /*
 3.  Write a function findPerson that takes an array of person
@@ -59,7 +59,7 @@ console.log(
 const findPerson=(person,name)=>{
     return person.find((person)=>person.name === name) ||null;
 };
-console.log(findPerson(
+/*console.log(findPerson(
     [
     { name: 'Amay', age: 25 },
     { name: 'Akhil', age: 25 },
@@ -67,21 +67,23 @@ console.log(findPerson(
     'Akhil',
     ),
    )
+    */
 
 /* 
-4.  Write a function that uses destructuring to extract the first two elements from an array, and
-returns them in an object with keys 'first' and 'second'.
+4.  Write a function that uses destructuring to extract the first two
+ elements from an array, and returns them in an object with keys 
+ 'first' and 'second'.
 / Your ES6 code here
 console.log(pickFirstAndSecond(['orange', 'banana', 'apple']))
 / {first: 'orange', second: 'banana'}
 console.log(pickFirstAndSecond(['red', 'blue', 'green']))
 / {first: 'red', second: 'blue'}
 */
-
-
-
-
-
+const pickFirstAndSecond=([First,Second])=>{
+    return {First, Second};
+};
+//console.log(pickFirstAndSecond(['orange', 'banana', 'apple']));
+//console.log(pickFirstAndSecond(['red', 'blue', 'green']));
 
 /*
 5. . Convert the following code to ES6+ syntax with minimum number of characters.
@@ -95,7 +97,10 @@ function startsWithA(str) {
 console.log(startsWithA('Akshita'))// true
 console.log(startsWithA('Jeena')) //false
 */
+const startsWithA = (str) => str.charAt(0) == "A";
 
+   //console.log(startsWithA('Akshita'))
+   //console.log(startsWithA('Jeena')) 
 
 
 /* 6. Write an ES6 function to return only the first character of the
@@ -103,7 +108,10 @@ console.log(startsWithA('Jeena')) //false
  / Your ES6 code here
 console.log(printFirstCharacter([1, 2, 3, 5, 8]))  // 1
 */
-
+const printFirstCharacter=(arr)=>{
+      return `${arr[0]}`;
+}
+//console.log(printFirstCharacter([1,2,3,4,5,8]));
 
 /*
 7. Write a function to return the last 5 characters as an array from 
@@ -112,34 +120,56 @@ the given array.
 console.log(printLastFive([0, 1, 1, 2, 3, 5, 8]))
 / [1, 2, 3, 5, 8]
 */
-
+const printLastFive=(arr)=>{
+    return arr.slice(-5);
+}
+//console.log(printLastFive([0,1,1,2,3,5,8]))
 
 /* 
-8. Write an ES6 function to return the second element of the given array by multiplying 20 to it.
+8. Write an ES6 function to return the second element of the given
+ array by multiplying 20 to it.
 / Your ES6 code here
 console.log(printSecondCharacter([1, 2, 3, 5, 8]))  // 40
 */
-
+const printSecondCharacter=(arr)=>{
+    return arr[1]*20;
+};
+//console.log(printSecondCharacter([1,2,3,5,8]));
 
 /* 
-9. Write an ES6 function to return the second element of the given array by adding “Hello” before it.
+9. Write an ES6 function to return the second element of the given 
+  array by adding “Hello” before it.
 / Your ES6 code here
-console.log(sayHello(['Akshay', 'Sweta', 'Prerana', 'Vinay']))  / Hello Sweta
+console.log(sayHello(['Akshay', 'Sweta', 'Prerana', 'Vinay'])) / Hello Sweta
 console.log(sayHello(['Kanika', 'Rakesh', 'Prerana', 'Puja']))  / Hello Rakesh
 */
-
+const sayHello=(arr)=>{
+    return `Hello ${arr[1]}`;
+}
+//console.log(sayHello(['Akshay', 'Sweta', 'Prerana', 'Vinay']));
+//console.log(sayHello(['Kanika', 'Rakesh', 'Prerana', 'Puja'])); 
 
 
 /*
-10. . Write an ES6 function to return sum of all numbers at even indices of the given array.
+10.  Write an ES6 function to return sum of all numbers at even 
+indices of the given array.
 / Your ES6 code here
 console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5])) // 6
 console.log(sumOfEvenIndices([12, 14, 3, 27, 15, 25])) // 30
 */
+const sumOfEvenIndices = (arr) => {
+    return arr.reduce((sum, num, index) => {
+      return index % 2 === 0 ? sum + num : sum;
+    },0);
+  };
+  
+  
+console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5]))
 
 
 /*
-11. Write an ES6 function to return the sum of only first 2 elements of the array .
+11. Write an ES6 function to return the sum of only first 2 
+elements of the array .
 / Your ES6 code here
 console.log(sumFirstTwoElements([10, 4, 3, 7, 1, 5])) // 14
 console.log(sumFirstTwoElements([12, 14, 3, 27, 15])) // 26
