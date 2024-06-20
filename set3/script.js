@@ -187,8 +187,8 @@ console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) // 5
 const printMultipleOfFive=(arr,num)=>{
           return arr.find(num=>num%5==0)
 };
-console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3])) 
-console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) 
+//console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3])) 
+//console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) 
 
 /*
 13.   Create a function which takes in the given object and returns 
@@ -210,12 +210,12 @@ const userData = {
 const getAddress=(Data)=>{
 return `{postalCode: '${userData.postalCode}', city: '${userData.city}'}`;
 }
-console.log(getAddress(userData));
+//console.log(getAddress(userData));
 
 
 /*
-14.  Create a function which takes in the given object and returns a sentence which indicates name
-of the person and where the person lives.
+14. Create a function which takes in the given object and returns a 
+sentence which indicates name of the person and where the person lives.
 / Your ES6 code here
 const userData1 = {
  name: 'Gaurav',
@@ -230,11 +230,27 @@ const userData2 = {
 }
 console.log(printData(userData2))  // Pritam lives in India
 */
+const userData1 = {
+    name: 'Gaurav',
+    postalCode: '12134',
+    country: 'Japan',
+   }
+   
+   const userData2 = {
+    name: 'Pritam',
+    postalCode: '560223',
+    country: 'India',
+   }
 
-
+   const printData=(userData)=>{
+    return `${userData.name} lives in ${userData.country}`
+   };
+   console.log(printData(userData1))
+   console.log(printData(userData2))
 
 /*
-15.  Create a function which takes a product object and returns a sentence about the product using ES6 features.
+15.  Create a function which takes a product object and returns a 
+sentence about the product using ES6 features.
 / Your ES6 code here
 const product = {
  name: 'Apple MacBook Air 2020',
@@ -246,4 +262,15 @@ const product = {
 }
 console.log(printProductDetails(product)) // Apple MacBook Air 2020 which is of 13.3 Inch.
 */
-
+const products = {
+    name: 'Apple MacBook Air 2020',
+    specification: {
+    capacity: '256GB',
+    size: '13.3 Inch',
+    },
+    price: 82900,
+   }
+const printProductDetails=(products)=>{
+    return `${products.name} which is of ${products.specification.size}.`
+}
+  console.log(printProductDetails(products))
