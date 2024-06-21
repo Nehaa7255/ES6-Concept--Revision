@@ -166,6 +166,8 @@ console.log(publisherName) // O'Reilly Media
 
 
 
+
+
 /*
 10.  Write an ES6 function that takes an array of objects and returns 
 the sum of all ages.
