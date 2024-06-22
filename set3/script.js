@@ -102,6 +102,8 @@ const startsWithA = (str) => str.charAt(0) == "A";
    //console.log(startsWithA('Jeena')) 
 
 
+
+
 /* 
 6. Write an ES6 function to return only the first character of the
  given array.
