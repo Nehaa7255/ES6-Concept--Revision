@@ -231,4 +231,3 @@ const sumOfAges = (arr) => {
   ]
 
   console.log(sumOfAges(arrays));
-  
