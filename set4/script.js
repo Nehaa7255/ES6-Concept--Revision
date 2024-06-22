@@ -70,10 +70,10 @@ var words = ['eat', 'sleep', 'code', 'repeat', 'neog', 'community']
 console.log(capitalizeWords(['eat', 'sleep', 'code', 'repeat']))
 / ["EAT", "SLEEP", "CODE", "REPEAT"]
 */
-
-
-
-
+const capitalizeWords=(arr)=>{
+    return arr.map(word => word.toUpperCase());
+}
+//console.log(capitalizeWords(['eat', 'sleep', 'code', 'repeat']));
 
 
 /*
@@ -82,7 +82,7 @@ console.log(capitalizeWords(['eat', 'sleep', 'code', 'repeat']))
     Avoid using in-built methods.
 / Your ES6 code here
 console.log(
- getValues()
+ getValues(
  [
  { name: 'John', age: 21 },
  { name: 'Mary', age: 22 },
@@ -93,6 +93,19 @@ console.log(
 ) // ["John", "Mary", "Peter"]
 */
 
+const getValues=(arr,property)=>{
+    const name=[];
+    for(let i=0;i<arr.length;i++){
+        name.push(arr[i][property])
+    }
+    return name;
+};
+console.log(getValues( [
+    { name: 'John', age: 21 },
+    { name: 'Mary', age: 22 },
+    { name: 'Peter', age: 23 },
+    ],"name",
+    ));
 
 /*
 7. Write an ES6 function that takes the users' details and returns the
