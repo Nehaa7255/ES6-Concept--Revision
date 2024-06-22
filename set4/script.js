@@ -100,12 +100,12 @@ const getValues=(arr,property)=>{
     }
     return name;
 };
-console.log(getValues( [
-    { name: 'John', age: 21 },
-    { name: 'Mary', age: 22 },
-    { name: 'Peter', age: 23 },
-    ],"name",
-    ));
+//console.log(getValues( [
+  //  { name: 'John', age: 21 },
+    //{ name: 'Mary', age: 22 },
+    //{ name: 'Peter', age: 23 },
+    //],"name",
+   // ));
 
 /*
 7. Write an ES6 function that takes the users' details and returns the
@@ -115,9 +115,12 @@ const userData = { firstName: 'John', lastName: 'Dee' }
 console.log(podAndTeamAllocation(userData))
 / {firstName: 'John', lastName: 'Dee', teamId: 667543}
 */
-
-
-
+const podAndTeamAllocation=(arr)=>{
+    let teamId=667543;
+    return `{firstName: '${arr.firstName}', lastName: '${arr.lastName}', teamId: ${teamId}}`;
+}
+const userData = { firstName: 'John', lastName: 'Dee' }
+console.log(podAndTeamAllocation(userData))
 
 /*
 8. Write an ES6 function which checks if a student already has a team.
