@@ -68,7 +68,6 @@ console.log(findPerson(
     ),
    )
     
-
 /* 
 4.  Write a function that uses destructuring to extract the first two
  elements from an array, and returns them in an object with keys 
@@ -84,7 +83,6 @@ const pickFirstAndSecond=([First,Second])=>{
 };
 //console.log(pickFirstAndSecond(['orange', 'banana', 'apple']));
 //console.log(pickFirstAndSecond(['red', 'blue', 'green']));
-
 
 /*
 5.  Convert the following code to ES6+ syntax with minimum number of characters.
