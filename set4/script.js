@@ -141,12 +141,9 @@ function checkForTeam(student) {
     }
     return student;
 }
-  
-  console.log(checkForTeam({ firstName: 'Penn', lastName: 'Ma' }));
-  
-  console.log(checkForTeam({ firstName: 'John', lastName: 'Dee', team: 'B' }));
-  
-  console.log(checkForTeam({ firstName: 'Priya', lastName: 'Raj' }));
+//  console.log(checkForTeam({ firstName: 'Penn', lastName: 'Ma' }));
+//console.log(checkForTeam({ firstName: 'John', lastName: 'Dee', team: 'B' }));
+//console.log(checkForTeam({ firstName: 'Priya', lastName: 'Raj' }));
   
   
 /*
